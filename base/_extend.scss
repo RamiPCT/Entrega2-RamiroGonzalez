@@ -1,0 +1,10 @@
+%text-white {
+    color: $white;
+    text-decoration: none;
+  }
+  
+  %hover-scale {
+    @include transition;
+    transform: scale(1.05);
+  }
+  

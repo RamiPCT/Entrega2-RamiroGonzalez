@@ -1,0 +1,31 @@
+.navbar {
+    &.custom-navbar {
+      margin-bottom: 3rem;
+      border-bottom: 3px solid variables.$border-color;
+      background-image: url(../img/bg-body.jpg);
+  
+      .text-nav {
+        @extend %text-white;
+        @include transition;
+  
+        &:hover {
+          @extend %hover-scale;
+          color: variables.$light-grey !important;
+        }
+      }
+  
+      .navbar-toggler {
+        border: none !important;
+        background-color: transparent !important;
+  
+        &:focus {
+          box-shadow: none !important;
+        }
+      }
+    }
+  
+    .img-logo {
+      width: 55px;
+    }
+  }
+  
